@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Course - eLearning WebSite Project </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Lesson-main.css" />
+</head>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="HomePage.html">Paathshaala</a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li><a class="active" href="HomePage.html">Home</a></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Course Name section -->
+<div class="container-fluid text-center">
+    <div class="wrapper">
+        <h1>Python MySql</h1>
+    </div>
+</div>
+<!-- Container ends-->
+
+
+<!-- links to lesson, videos and examples -->
+<div class="container-fluid text-center">
+
+</div>
+<hr>
+<!--Page Lesson Content -->
+<div class="container">
+    <div class="row">
+        <p>
+            The Python standard for database interfaces is the Python DB-API. Most Python database interfaces adhere to this standard. You can choose the right database for your application. Python Database API supports a wide range of database servers such as −
+            GadFly mSQL MySQL PostgreSQL Microsoft SQL Server 2000 Informix Interbase Oracle Sybase
+            <br>What is MySQLdb?
+            <br> MySQLdb is an interface for connecting to a MySQL database server from Python. It implements the Python Database API v2.0 and is built on top of the MySQL C API.
+
+        </p>
+        <p>
+            <br>How do I Install MySQLdb?
+            <br> Before proceeding, you make sure you have MySQLdb installed on your machine. Just type the following in your Python script and execute it
+            <br> − #!/usr/bin/python import MySQLdb If it produces the following result, then it means MySQLdb module is not installed − Traceback (most recent call last): File "test.py", line 3, in
+            <module>> import MySQLdb ImportError: No module named MySQLdb To install MySQLdb module, use the following command − For Ubuntu, use the following command - $ sudo apt-get install python-pip python-dev libmysqlclient-dev For Fedora, use the following
+                command - $ sudo dnf install python python-devel mysql-devel redhat-rpm-config gcc For Python command prompt, use the following command - pip install MySQL-python Note − Make sure you have root privilege to install above module. Database
+                Connection Before connecting to a MySQL database, make sure of the followings − You have created a database TESTDB. You have created a table EMPLOYEE in TESTDB. This table has fields FIRST_NAME, LAST_NAME, AGE, SEX and INCOME. User ID
+                "testuser" and password "test123" are set to access TESTDB. Python module MySQLdb is installed properly on your machine. You have gone through MySQL tutorial to understand MySQL Basics. Example Following is the example of connecting with
+                MySQL database "TESTDB" #!/usr/bin/python import MySQLdb # Open database connection db = MySQLdb.connect("localhost","testuser","test123","TESTDB" ) # prepare a cursor object using cursor() method cursor = db.cursor() # execute SQL query
+                using execute() method. cursor.execute("SELECT VERSION()") # Fetch a single row using fetchone() method. data = cursor.fetchone() print "Database version : %s " % data # disconnect from server db.close() While running this script, it is
+                producing the following result in my Linux machine. Database version : 5.0.45 If a connection is established with the datasource, then a Connection Object is returned and saved into db for further use, otherwise db is set to None. Next,
+                db object is used to create a cursor object, which in turn is used to execute SQL queries. Finally, before coming out, it ensures that database connection is closed and resources are released.
+
+
+        </p>
+        <p>
+
+            <br>Creating Database Table
+            <br>Once a database connection is established, we are ready to create tables or records into the database tables using execute method of the created cursor. Example Let us create Database table EMPLOYEE − #!/usr/bin/python import MySQLdb #
+            Open database connection db=M ySQLdb.connect( "localhost", "testuser", "test123", "TESTDB" ) # prepare a cursor object using cursor() method cursor=d b.cursor() # Drop table if it already exist using execute() method. cursor.execute( "DROP
+            TABLE IF EXISTS EMPLOYEE") # Create table as per requirement sql="" "CREATE TABLE EMPLOYEE ( FIRST_NAME CHAR(20) NOT NULL, LAST_NAME CHAR(20), AGE INT, SEX CHAR(1), INCOME FLOAT )" "" cursor.execute(sql) # disconnect from server db.close()
+        </p>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="container-fluid text-center">
+
+    <ul class="nav narbar-nav">
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <p>copyright&copy;Paathshaala - All Rights Reserved</p>
+
+</div>

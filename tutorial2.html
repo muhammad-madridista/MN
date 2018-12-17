@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Course - eLearning WebSite Project </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Lesson-main.css" />
+</head>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="HomePage.html">Paathshaala</a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li><a class="active" href="HomePage.html">Home</a></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Course Name section -->
+<div class="container-fluid text-center">
+    <div class="wrapper">
+        <h1>Conditional Statements</h1>
+    </div>
+</div>
+<!-- Container ends-->
+
+
+<!-- links to lesson, videos and examples -->
+<div class="container-fluid text-center">
+
+</div>
+<hr>
+<!--Page Lesson Content -->
+<div class="container">
+    <div class="row">
+        <p>
+            Conditional statements helps you to make decision based on certain conditions. These conditions are specified by a set of conditional statements having boolean expressions which are evaluated to a boolean value true or false. There are following types
+            of conditional statements in C.
+            <br>C if statement
+            <br> if (testExpression) { // statements } The if statement evaluates the test expression inside the parenthesis. If the test expression is evaluated to true (nonzero), statements inside the body of if is executed. If the test expression is
+            evaluated to false (0), statements inside the body of if is skipped from execution. </p>
+        <p>
+            <br> The if...else
+            <br>statement executes some code if the test expression is true (nonzero) and some other code if the test expression is false (0). Syntax of if...else if (testExpression) { // codes inside the body of if } else { // codes inside the body of
+            else } If test expression is true, codes inside the body of if statement is executed and, codes inside the body of else statement is skipped. If test expression is false, codes inside the body of else statement is executed and, codes inside
+            the body of if statement is skipped. </p>
+        <p>
+            <br> Nested if...else statement (if...elseif....else Statement)
+            <br> The if...else statement executes two different codes depending upon whether the test expression is true or false. Sometimes, a choice has to be made from more than 2 possibilities. The nested if...else statement allows you to check for
+            multiple test expressions and execute different codes for more than two conditions. Syntax of nested if...else statement. if (testExpression1) { // statements to be executed if testExpression1 is true } else if(testExpression2) { // statements
+            to be executed if testExpression1 is false and testExpression2 is true } else if (testExpression 3) { // statements to be executed if testExpression1 and testExpression2 is false and testExpression3 is true } . . else { // statements to be
+            executed if all test expressions are false } Example #3: C Nested if...else statement // Program to relate two integers using =, > or
+            < #include <stdio.h>
+                int main() { int number1, number2; printf("Enter two integers: "); scanf("%d %d", &number1, &number2); //checks if two integers are equal. if(number1 == number2) { printf("Result: %d = %d",number1,number2); } //checks if number1 is greater than number2.
+                else if (number1 > number2) { printf("Result: %d > %d", number1, number2); } // if both test expression is false else { printf("Result: %d
+                < %d ",number1, number2);
+                    }
+                
+                    return 0;
+                }
+                Output
+                
+                Enter two integers: 12
+                23
+                Result: 12 < 23
+                You can also use switch statement to make decision between multiple possibilites.
+                
+               
+                
+                
+        </p>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="container-fluid text-center ">
+
+    <ul class="nav narbar-nav ">
+
+        <li><a href="contact.html ">Contact</a></li>
+
+    </ul>
+
+    <p>copyright&copy;Paathshaala - All Rights Reserved</p>
+
+</div>

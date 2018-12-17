@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Course - eLearning WebSite Project </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Lesson-main.css" />
+</head>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="HomePage.html">Paathshaala</a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li><a class="active" href="HomePage.html">Home</a></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Course Name section -->
+<div class="container-fluid text-center">
+    <div class="wrapper">
+        <h1>SQL</h1>
+    </div>
+</div>
+<!-- Container ends-->
+
+
+<!-- links to lesson, videos and examples -->
+<div class="container-fluid text-center">
+
+</div>
+<hr>
+<!--Page Lesson Content -->
+<div class="container">
+    <div class="row">
+        <p>
+            SQL is a standard language for storing, manipulating and retrieving data in databases.
+            <br> Database Tables
+            <br> A database most often contains one or more tables. Each table is identified by a name (e.g. "Customers" or "Orders"). Tables contain records (rows) with data. SQL Statements Most of the actions you need to perform on a database are done
+            with SQL statements. The following SQL statement selects all the records in the "Customers" table: Example SELECT * FROM Customers;
+
+        </p>
+        <p>
+            <br>The SQL SELECT
+            <br> Statement The SELECT statement is used to select data from a database. The data returned is stored in a result table, called the result-set. SELECT Syntax SELECT column1, column2, ... FROM table_name; Here, column1, column2, ... are the
+            field names of the table you want to select data from. If you want to select all the fields available in the table, use the following syntax: SELECT * FROM table_name;
+            <br>The SQL SELECT DISTINCT Statement
+            <br> The SELECT DISTINCT statement is used to return only distinct (different) values. Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values. SELECT DISTINCT Syntax
+            SELECT DISTINCT column1, column2, ... FROM table_name;
+
+
+        </p>
+        <p>
+            <br>The SQL WHERE
+            <br> Clause The WHERE clause is used to filter records. The WHERE clause is used to extract only those records that fulfill a specified condition. WHERE Syntax SELECT column1, column2, ... FROM table_name WHERE condition;
+            <br>The SQL AND, OR and NOT Operators
+            <br> The WHERE clause can be combined with AND, OR, and NOT operators. The AND and OR operators are used to filter records based on more than one condition: The AND operator displays a record if all the conditions separated by AND is TRUE.
+            The OR operator displays a record if any of the conditions separated by OR is TRUE. The NOT operator displays a record if the condition(s) is NOT TRUE. AND Syntax SELECT column1, column2, ... FROM table_name WHERE condition1 AND condition2
+            AND condition3 ...; OR Syntax SELECT column1, column2, ... FROM table_name WHERE condition1 OR condition2 OR condition3 ...; NOT Syntax SELECT column1, column2, ... FROM table_name WHERE NOT condition;
+        </p>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="container-fluid text-center">
+
+    <ul class="nav narbar-nav">
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <p>copyright&copy;Paathshaala - All Rights Reserved</p>
+
+</div>

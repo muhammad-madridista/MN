@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Course - eLearning WebSite Project </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Lesson-main.css" />
+</head>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="HomePage.html">Paathshaala</a>
+        </div>
+
+        <ul class="nav navbar-nav">
+            <li><a class="active" href="HomePage.html">Home</a></li>
+
+        </ul>
+
+    </div>
+</nav>
+<!-- Course Name section -->
+<div class="container-fluid text-center">
+    <div class="wrapper">
+        <h1>Python MongoDb</h1>
+    </div>
+</div>
+<!-- Container ends-->
+
+
+<!-- links to lesson, videos and examples -->
+<div class="container-fluid text-center">
+
+</div>
+<hr>
+<!--Page Lesson Content -->
+<div class="container">
+    <div class="row">
+        <p>
+            MongoDB stores data in JSON-like documents, which makes the database very flexible and scalable. To be able experiment with the code examples in this tutorial, you will need access to a MongoDB database. You can download a free MongoDB database at https://www.mongodb.com.
+            <br>PyMongo
+            <br> Python needs a MongoDB driver to access the MongoDB database. In this tutorial we will use the MongoDB driver "PyMongo". We recommend that you use PIP to install "PyMongo". PIP is most likely already installed in your Python environment.
+            Navigate your command line to the location of PIP, and type the following: Download and install "PyMongo": C:\Users\Your Name\AppData\Local\Programs\Python\Python36-32\Scripts>python -m pip install pymongo
+        </p>
+        <p>
+            <br>Creating a Database
+            <br>To create a database in MongoDB, start by creating a MongoClient object, then specify a connection URL with the correct ip address and the name of the database you want to create. MongoDB will create the database if it does not exist,
+            and make a connection to it. Example
+            <br> Create a database called "mydatabase": import pymongo myclient=p ymongo.MongoClient( "mongodb://localhost:27017/") mydb=m yclient[ "mydatabase"] </p>
+        <p>
+            <br>Creating a Collection
+            <br> To create a collection in MongoDB, use database object and specify the name of the colelction you want to create. MongoDB will create the collection if it does not exist. Example
+            <br> Create a collection called "customers": import pymongo myclient=p ymongo.MongoClient( "mongodb://localhost:27017/") mydb=m yclient[ "mydatabase"] mycol=m ydb[ "customers"] Important: In MongoDB, a collection is not created until it gets
+            content! MongoDB waits until you have inserted a document before it actually creates the collection. Check if Collection Exists Remember: In MongoDB, a collection is not created until it gets content, so if this is your first time creating
+            a collection, you should complete the next chapter (create document) before you check if the collection exists! You can check if a collection exist in a database by listing all collections: Example Return a list of all collections in your
+            database: print(mydb.list_collection_names()) Or you can check a specific collection by name: Example Check if the "customers" collection exists: collist=m ydb.list_collection_names() if "customers" in collist: print( "The collection exists.")
+        </p>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<div class="container-fluid text-center">
+
+    <ul class="nav narbar-nav">
+
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <p>copyright&copy;Paathshaala - All Rights Reserved</p>
+
+</div>

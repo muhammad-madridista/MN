@@ -1,0 +1,32 @@
+.wrapper{
+    background: rgb(49, 47, 47);
+    padding:70px 100px 30px 100px;
+color:white;
+}
+p, .btn-default{
+    padding:10px 100px 10px 100px;
+    font-size:16px;
+    line-height: 1.8em;
+    font-family: "Ariel","helvetica","verdana";
+}
+.btn{
+    color:black;
+    border:1px solid grey;
+}
+.page-header{
+    padding-left:50px;
+}
+#srch{
+    padding:5px;
+}
+.panel-text{
+    padding:10px 60px 10px 60px;
+    border:1px solid lavender;
+}
+.nav li{
+    display:inline-block;
+    
+}
+.btn{
+    border:1px solid skyblue;
+}
